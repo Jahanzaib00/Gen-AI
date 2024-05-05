@@ -1,18 +1,18 @@
-import json
-import base64
-import io
 from openai import OpenAI
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-import torch 
+from dotenv import load_dotenv
+import os
 
 app = Flask(__name__)
 CORS(app)
 
+load_dotenv()
+openai_api_key = os.getenv("OPENAI_API_KEY")
 
 @app.route('/generate', methods=['POST'])
 def generate_story():
-    client = OpenAI(api_key="")
+    client = OpenAI(api_key=openai_api_key)
     # Retrieve data from POST request
     data = request.json
     paragraph_no = data.get('paragraph_no', 1)
