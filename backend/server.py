@@ -12,7 +12,7 @@ CORS(app)
 
 @app.route('/generate', methods=['POST'])
 def generate_story():
-    client = OpenAI(api_key="sk-proj-mD7gEmvTPS0AANKm261bT3BlbkFJqoHnqQCVayqaRlhX4Sde")
+    client = OpenAI(api_key="")
     # Retrieve data from POST request
     data = request.json
     paragraph_no = data.get('paragraph_no', 1)
