@@ -1,6 +1,6 @@
 // api.js
 
-const API_URL = "http://jzboy.pythonanywhere.com";
+const API_URL = "https://jzboy.pythonanywhere.com";
 
 export async function generateStory(data) {
   try {
