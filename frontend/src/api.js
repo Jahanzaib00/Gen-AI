@@ -1,6 +1,6 @@
 // api.js
 
-const API_URL = "http://localhost:5000";
+const API_URL = "http://jzboy.pythonanywhere.com";
 
 export async function generateStory(data) {
   try {
