@@ -21,7 +21,7 @@ function StoryDisplay() {
             </div>
             <div className="md:w-1/2">
               <img
-                src={`data:image/png;base64, ${item.image}`}
+                src={item.image}
                 alt="Generated"
                 className="max-w-full h-auto rounded-lg shadow-lg"
               />
